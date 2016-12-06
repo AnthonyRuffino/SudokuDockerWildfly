@@ -3,12 +3,12 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
-	<groupId>net.eisele.test</groupId>
-	<artifactId>swarm-sample</artifactId>
+	<groupId>org.ncidence.rs.sudokusolver</groupId>
+	<artifactId>sudoku-solver</artifactId>
 	<version>1.0-SNAPSHOT</version>
 	<packaging>war</packaging>
 
-	<name>swarm-sample</name>
+	<name>>sudoku-solver</name>
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -34,6 +34,7 @@
 			<artifactId>wildfly-swarm-jaxrs</artifactId>
 			<version>${version.wildfly-swarm}</version>
 		</dependency>
+		<!-- https://github.com/AnthonyRuffino/SudokuSolver -->
 		<dependency>
 			<groupId>org.ncidence</groupId>
 			<artifactId>sudokusolver</artifactId>
@@ -90,7 +91,7 @@
 									<exec>
 										<arg>java</arg>
 										<arg>-jar</arg>
-										<arg>/opt/wildfly-swarm/sample-service.jar</arg>
+										<arg>/opt/wildfly-swarm/sudoku-solver-service.jar</arg>
 									</exec>
 								</entryPoint>
 								<assembly>
@@ -99,9 +100,9 @@
 											<dependencySet>
 												<useProjectAttachments>true</useProjectAttachments>
 												<includes>
-													<include>net.eisele.test:swarm-sample:jar:swarm</include>
+													<include>org.ncidence.rs.sudokusolver:sudoku-solver:jar:swarm</include>
 												</includes>
-												<outputFileNameMapping>sample-service.jar</outputFileNameMapping>
+												<outputFileNameMapping>sudoku-solver-service.jar</outputFileNameMapping>
 											</dependencySet>
 										</dependencySets>
 									</inline>

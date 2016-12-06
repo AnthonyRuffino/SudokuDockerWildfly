@@ -1,4 +1,4 @@
-package net.eisele.test.swarm.sample;
+package org.ncidence.rs.sudokusolver;
 
 import javax.ws.rs.Produces;
 import javax.ws.rs.GET;

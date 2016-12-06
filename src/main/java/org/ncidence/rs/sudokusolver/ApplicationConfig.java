@@ -1,4 +1,4 @@
-package net.eisele.test.swarm.sample;
+package org.ncidence.rs.sudokusolver;
 
 import java.util.Set;
 import javax.ws.rs.core.Application;
@@ -23,7 +23,7 @@ public class ApplicationConfig extends Application {
      * out calling this method in getClasses().
      */
     private void addRestResourceClasses(Set<Class<?>> resources) {
-        resources.add(net.eisele.test.swarm.sample.SudokuService.class);
+        resources.add(org.ncidence.rs.sudokusolver.SudokuService.class);
     }
 
 }
