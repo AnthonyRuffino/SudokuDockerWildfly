@@ -1,6 +1,7 @@
 package org.ncidence.rs.sudokusolver;
 
 import java.util.Set;
+
 import javax.ws.rs.core.Application;
 
 /**
@@ -24,6 +25,8 @@ public class ApplicationConfig extends Application {
      */
     private void addRestResourceClasses(Set<Class<?>> resources) {
         resources.add(org.ncidence.rs.sudokusolver.SudokuService.class);
+
+        resources.add(org.ncidence.rs.sudokusolver.SudokuTailService.class);
     }
 
 }
